@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 1</title>
+  </head>
+  <body>
+    <script>
+      let matriz = [
+        ["Danilo", 1000, "SP"],
+        ["Fabio", 2000, "RJ"],
+        ["Joao", 1500, "BH"],
+      ];
+
+      console.log("salario sem o aumento");
+      console.table(matriz);
+
+      for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+          if (j === 1) {
+            matriz[i][j] = (matriz[i][j] * 1.1).toFixed(2); // 1.1 = 100% + 10%
+            matriz[i][j] = parseFloat(matriz[i][j]); // Convertendo pra um numero
+          }
+        }
+      }
+      console.log("Matriz Atualizada com 10% de aumento:");
+      console.table(matriz);
+    </script>
+  </body>
+</html>

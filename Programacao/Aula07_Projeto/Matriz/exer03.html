@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 3</title>
+  </head>
+  <body>
+    <!-- 
+        Voce trabalha em uma loja e precisa analisar os produtos disponiveis. Cada produto tem informacoes como nome, preco e estoque, armazenadas em uma tabela. seu objetivo é listar todos os produtos com precos acima de uma determinado valor, para destacar as mercadorias de maior valor.
+    -->
+    <script>
+      let produtos = [
+        ["Mouse", 50.0, 10],
+        ["Teclado", 150.0, 5],
+        ["Fone de ouvido", 30.0, 20],
+        ["Mouse gamer", 200.0, 2],
+        ["Mini som", 120.0, 8],
+      ];
+
+      let valorLimite = 100; // Valor mínimo para destacar os produtos
+
+      let produtosDestacados = [];
+
+      // Iterando sobre a tabela de produtos e verificando o preço
+      for (let i = 0; i < produtos.length; i++) {
+        let nome = produtos[i][0];
+        let preco = produtos[i][1];
+        let estoque = produtos[i][2];
+
+        // Verificando se o preço é superior ao valor limite
+        if (preco > valorLimite) {
+            //formatando a casa decinal do preco
+          let precoFormatado = preco.toFixed(2);
+          produtosDestacados.push(
+            `Nome: ${nome}, Preço: R$ ${precoFormatado}, Estoque: ${estoque}`
+          );
+        }
+      }
+
+      // Exibindo os produtos destacados
+      alert(
+        "Produtos com preço acima de R$ " +
+          valorLimite +
+          ":\n" +
+          produtosDestacados.join("\n")
+      );
+    </script>
+  </body>
+</html>

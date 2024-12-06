@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcao</title>
+  </head>
+  <body>
+    <script>
+      /*   function helloworld() {
+        return "Hello World";
+      }
+      alert(helloworld()); */
+
+      /*   function double_number(x, y) {
+        // if (typeof x !== "number" || typeof y !== "number") {
+        // if (isNaN(x) || isNaN(y)) {
+        if (Number.isNaN(x) || Number.isNaN(y)) {
+          alert("Erro: ambos dos valores devem ser numeros");
+          return;
+        }
+        let result = x + y;
+        alert(result);
+      }
+
+      let m = parseFloat(prompt("Digite um numero: "));
+      let n = parseFloat(prompt("digite outro numero: ")); 
+      double_number(m, n);*/
+
+      /* function par_impar(number) {
+        //  let result;
+        // if (number % 2 === 0) {
+        //   result = "Par";
+        // } else {
+        //   result = "Impar";
+        // }
+        // return alert(result);
+        return number % 2 === 0 ? "Par" : "Impar"; //IF TERNARIO
+      }
+      //   par_impar(4);
+      alert(par_impar(Number(prompt("Digite um numero: "))));  */
+
+      function soma_num(start, end) {
+        let soma = 0;
+        for (let i = start; i <= end; i++) {
+          if (i % 2 === 1) {
+            soma += i;
+          }
+        }
+        // return alert(`A soma dos numeros de ${start} ate ${end} é ${soma}`);
+        return `A soma dos numeros impares q estao entre ${start} ate ${end} é ${soma}`;
+      }
+
+      let inicial = parseFloat(prompt("Digite o numero inicial: "));
+      let final = parseFloat(prompt("Digite o numero final: "));
+      alert(soma_num(inicial, final));
+      
+    </script>
+  </body>
+</html>

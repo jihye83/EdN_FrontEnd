@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 2</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * * Voce foi contratado para desenvolver uma funcionalidade para um evento
+       * * esportivo. O sistema deve classificar os competidores em categorias com
+       * * base na idade:
+       * * 1. Infantil: idade entre 6 e 12 anos.
+       * * 2. Juvenil: idade entre 13 e 17 anos.
+       * * 3. Adulto: idade maior ou igual a 18 anos.
+       * * 4. Idades menores que 6 anos: exibir mensagem de que a idade nao é permitido para competir.
+       **/
+
+      let age = Number(prompt("Digite a sua idade: "));
+
+      if (age >= 6 && age <= 12) {
+        alert(
+          `sua idade é ${age} anos está habito a competir em categoria Infantil`
+        );
+      } else if (age >= 13 && age <= 17) {
+        alert(
+          `sua idade é ${age} anos está habito a competir em categoria Juvenil`
+        );
+      } else if (age >= 18) {
+        alert(
+          `sua idade é ${age} anos está habito a competir em categoria Adulto`
+        );
+      } else {
+        alert(`sua idade é ${age} anos , voce nao tem permissao pra competir.`);
+      }
+    </script>
+  </body>
+</html>

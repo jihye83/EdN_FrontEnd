@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="./projeto_blog.css" />
+  </head>
+  <body>
+    <h1>Blog Pessoal</h1>
+    <form id="blog-form">
+      <div class="campo">
+        <label for="title">Titulo: </label>
+        <input type="text" id="title" name="title" required />
+      </div>
+
+      <div class="campo">
+        <label for="body">Conteudo: </label>
+        <textarea
+          type="text"
+          name="body"
+          id="body"
+          required
+          rows="5"
+        ></textarea>
+      </div>
+      <div class="botao">
+        <button type="button" id="enviar">Enviar</button>
+      </div>
+    </form>
+    <h2>Resposta da API</h2>
+    <pre id="response"></pre>
+    <script src="./projeto_blog.js"></script>
+  </body>
+  <!-- 
+    Imagine que voce esta desenvolvendo uma aplicacao de blog e precisa implementar a funcionalidade de criacao de posts. Para isso, voce utilizara a API JSONPlaceholder para enviar os dados do titulo e do conteudo do post, e ela respondera simulando o comportamento de um backend real.
+
+    https://jsonplaceholder.typicode.com/posts
+
+    voce criara:
+    um formulario onde os usuarios podem digitar o titulo e o conteudo do post.
+    Um botao que, ao ser clicado, enviara esses dados para a API via POST.
+    Um feedback na pagina mostrando o ID do post gerado, o titulo e o conteudo enviado.
+--></html>

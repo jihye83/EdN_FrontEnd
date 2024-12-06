@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      alert(`Ola 😒`);
+
+      let name = prompt("Qual é seu nome? ");
+      let idade = prompt("Quantos anos voce tem?");
+      let cidade = prompt("Em qual cidade voce mora?");
+
+      alert(
+        `Muito prazer, ${name}! voce tem ${idade} anos e mora em ${cidade}. Vamos fazer alguns caluclos.`
+      );
+
+      let num1 = parseFloat(prompt("Digite um numero: "));
+      let num2 = parseFloat(prompt("Digite o segundo numero: "));
+
+      let soma = num1 + num2;
+      let sub = num1 - num2;
+      let mul = num1 * num2;
+      let div = num1 / num2;
+      let mod = num1 % num2;
+
+      alert(`aqui estao os resultados doa calculos com os numeros que voce me forneceu:
+       -soma: ${soma}
+       -subtracao: ${sub}
+       -multiplicacao: ${mul}
+       -divisao: ${div.toFixed(2)}
+       -modulo: ${mod}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getElementByClassName</title>
+    <style>
+      .item {
+        color: black;
+        font-size: 18px;
+      }
+
+      .destacado {
+        background-color: yellow;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista de Tarefa</h1>
+    <ul>
+      <li class="item">Estudar JavaScript</li>
+      <li class="item">Fazer Exercicios</li>
+      <li class="item">Ler Documentacao</li>
+      <li class="item">Praticar Programacao</li>
+    </ul>
+    <button id="destacar">Destacar itens</button>
+    <button id="resetar">Resetar estilo</button>
+
+    <script>
+      // Selecionando os botoes
+      const botaoDestacar = document.getElementById("destacar");
+      const botaoResetar = document.getElementById("resetar");
+
+      // Funcao para destacar os itens da lista
+      botaoDestacar.addEventListener("click", () => {
+        const itens = document.getElementsByClassName("item");
+        // Converter HTMLcolletion para um arry e aplicar as mudancas
+        Array.from(itens).forEach((item) => {
+          item.classList.add("destacado");
+        });
+      });
+
+      // Funcao para resetar os estilos
+      botaoResetar.addEventListener("click", () => {
+        const itens = document.getElementsByClassName("item");
+        Array.from(itens).forEach((item) => {
+          item.classList.remove("destacado");
+        });
+      });
+    </script>
+  </body>
+</html>

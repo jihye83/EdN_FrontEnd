@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      .card {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      body{
+        text-align: center;
+        margin: 50px;
+      }
+
+      #dicaMotivacional {
+        font-size: 20px;
+        color: green;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      button {
+        margin: 5px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Ativodade: obter uma dica aleatoria para motivacao diaria
+        Contexto:
+        Imagine que voce esta criando uma pagina de motivacao. Sempre que o usuario clicar em um botao, uma dica motivacional sera exibida na tela. Essas dicas sao fornecidade por uma API publica de frases motivacionais.
+        O objetivo é pratica o uso de JQuery para manipular elementos da pagina e AJAX para buscar dados de uma API.
+        Instrucoes da atividade:
+        Crie uma pagina HTML com um botao chamado "Obter Dica"
+        Quando o botao foi clicado, use o JQuery para fazer uma requisicao AJAX a API publica de frases motivacionais.
+        Exiba a dica motivacional recebida na pagina dentro de uma <div>. -->
+    <h1 id="title">Motivacao Diaria</h1>
+    <button id="botao">Obter Dicas</button>
+    <div id="dicaMotivacional" class="card">
+      <!-- aqui vai aparecer a frase motivacional -->
+    </div>
+    
+
+    <script src="./atividade.js"></script>
+  </body>
+</html>

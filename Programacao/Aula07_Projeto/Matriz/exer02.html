@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicios 2</title>
+  </head>
+  <body>
+    <!-- 
+        Em uma empresa, voce tem uma tabela que representa as vendas em diferentes regioes e periodos. Sua tarefa é calcular o total de vendas para avaliar o desempenho geral da empresa.
+    -->
+    <script>
+      let vendas = [
+        ["Sao Paulo", "Setembro", 2000],
+        ["Sao Paulo", "Outubro", 3000],
+        ["Paraná", "Setembro", 1500],
+        ["Rio de Janeiro", "Outubro", 2500],
+      ];
+
+      let totalVendas = 0;
+
+      // Iterando sobre a tabela de vendas e somando os valores
+      for (let i = 0; i < vendas.length; i++) {
+        totalVendas += vendas[i][2]; // Adiciona o valor da venda (índice 2) ao total
+      }
+
+      // Exibindo o total de vendas no console
+      console.log("Total de Vendas: R$ " + totalVendas);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 11-Formulario</title>
+    <link rel="stylesheet" href="projeto4_Jihyekoo.css" />
+  </head>
+  <body>
+    <main class="form-container">
+      <h2>Cadastro de Produto</h2>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Nome do Produto: </label>
+          <input
+            type="text"
+            id="name_prod"
+            name="name_prod"
+            minlength="3"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="text">Código do produto: </label>
+          <input
+            type="text"
+            inputmode="numeric"
+            id="cod_prod"
+            name="cod_prod"
+            maxlength="6"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="category">Categoria: </label>
+          <select name="category" id="category" required>
+            <option value="">Selecione...</option>
+            <option value="eletronico">Eletrônico</option>
+            <option value="vestuario">Vestúario</option>
+            <option value="alimentos">Alimento</option>
+            <option value="moveis">Móveis</option>
+            <option value="brinquedos">Brinquedo</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Quantidade: </label>
+          <input
+            type="number"
+            name="quantity"
+            id="quantity"
+            min="0"
+            max="1000"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="price">Preço: </label>
+          <input
+            type="number"
+            name="price"
+            id="price"
+            step="0.01"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="expiration_date">Data de validade: </label>
+          <input type="date" id="expiration_date" name="expiration_date" />
+        </div>
+
+        <div class="form-group">
+          <label for="about">Descrição do Produto: </label>
+          <textarea
+            name="observations"
+            id="observations"
+            rows="4"
+            placeholder="Escreva aqui a descrição do produto..."
+          ></textarea>
+        </div>
+
+        <input type="submit" value="Cadastrar Produto" class="submit-btn" />
+      </form>
+    </main>
+  </body>
+</html>

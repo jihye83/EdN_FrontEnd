@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * * Voce é um desenvolvedor contratado por uma loja para criar uma funcionalidade
+       * * que calcula descontos com base na idade do cliente. O sistema deve exibir uma
+       * * mensagem informando o percentual de descontos que o cliente tem direito:
+       * * 1. Criancas(idade menor que 12 anos) recebem 50% de desconto
+       * * 2. Idosos(idade maior ou igual a 60 anos) recebem 30% de desconto
+       * * 3. Demais clientes(idade entre 12 e 59 anos) nao tem desconto.
+       **/
+
+      let age = Number(prompt("Digite a sua idade: "));
+
+      if (age < 12) {
+        alert(`sua idade é ${age} anos e Crianças recebem 50% de desconto`);
+      } else if (age >= 60) {
+        alert(`sua idade é ${age} anos e Idosos recebem 30% de desconto`);
+      } else {
+        alert(`sua idade é ${age} anos e nao possue desconto.`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 1</title>
+  </head>
+  <body>
+    <script>
+      alert("Olá! 😒");
+
+      let name = prompt("Qual é seu nome? ");
+      let age = prompt("Quantos anos voce tem?");
+      let city = prompt("Em qual cidade voce mora?");
+
+      alert(
+        `Muito prazer, ${name}! voce tem ${age} anos e mora em ${city}. Vamos fazer alguns caluclos.`
+      );
+
+      let number1 = parseFloat(prompt("Digite um número: "));
+      let number2 = parseFloat(prompt("Digite o segundo número: "));
+
+      let soma = number1 + number2;
+      let sub = number1 - number2;
+      let mul = number1 * number2;
+      let div = number1 / number2;
+      let mod = number1 % number2;
+
+      alert(`Aqui estão os resultados dos cálculos com os números que você me forneceu:
+       -soma: ${soma}
+       -subtração: ${sub}
+       -multiplicação: ${mul}
+       -divisão: ${div.toFixed(2)}
+       -módulo: ${mod}`);
+
+      alert(`Obrigado por usar o nosso sistema.`);
+    </script>
+  </body>
+</html>

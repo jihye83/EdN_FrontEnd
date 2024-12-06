@@ -1,0 +1,42 @@
+/* estilos basicos para o corpo*/
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabela {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* estilo para o cabecalho da tabela*/
+.tabela thead th{
+    background-color: #DD9787;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/*estilo para o corpo da tabela*/
+.tabela tbody td{
+    padding: 10px;
+    border-bottom: 1px solid #9D9E94;
+}
+
+/*estilo para as linha do corpo*/
+.tabela tbody tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+/* estilo do rodape */
+.tabela tfoot td{
+    background-color: #6C809A;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+}

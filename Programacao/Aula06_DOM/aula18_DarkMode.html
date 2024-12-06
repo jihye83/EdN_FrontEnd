@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 18_Dark Mode</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: black;
+        padding: 20px;
+      }
+
+      h1 {
+       font-size: 24px;
+        color: black;
+      }
+
+      p {
+        font-size: 16px;
+        color: black;
+      }
+
+      button{
+        padding: 10px 20px;
+        background-color: gray;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dark-mode{
+        background-color: #333;
+        color: white;
+      }
+
+      .dark-mode h1,
+      .dark-mode p{
+        color: white;
+      }
+
+      .dark-mode button {
+        background-color: #666;
+      }
+
+      .quadrado{
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" onclick="darkMode()">Ative Dark Mode</button>
+    <h1 class="titulo" onclick="pintar()">Titulo Principal da Pagina</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+      aperiam consectetur unde distinctio, dolore excepturi magni corrupti
+      cumque iste labore, quia sint amet odio dicta. Sint officia voluptates
+      incidunt ipsam?
+    </p>
+    <div
+      class="quadrado"
+      onmouseenter="promocao()"
+      onmouseout="acabouPromocao()"
+      onclick="escreva()"
+    ></div>
+
+    <script>
+      let quadrado = document.querySelector(".quadrado");
+
+      function pintar() {
+        let titulo = document.querySelector(".titulo");
+        titulo.style.color = "red";
+      }
+
+      function darkMode() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark-mode");
+      }
+
+      function promocao() {
+        quadrado.style.backgroundColor = "red";
+        quadrado.innerHTML = "Entrou";
+      }
+
+      function acabouPromocao() {
+        quadrado.style.backgroundColor = "blue";
+        quadrado.innerHTML = "Saiu";
+      }
+
+      function escreva() {
+        quadrado.style.backgroundColor = "green";
+        quadrado.innerHTML = "Clicou";
+      }
+    </script>
+  </body>
+</html>

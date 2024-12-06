@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 1</title>
+  </head>
+  <body>
+    <script>
+      const numeroAleatorio = Math.floor(Math.random() * 101);
+      console.log(numeroAleatorio);
+      let num = parseFloat(prompt("Digite um numero de 1 a 100: "));
+      let i = 7;
+      
+      do {
+        if (num === numeroAleatorio) {
+          alert(`Parabens voce acertou !!`);
+          break;
+        } else {
+          i--;
+          if (i > 0) {
+
+            if (num < numeroAleatorio) {
+              alert(
+                `O numero sorteado é maior que ${num}, voce tem mais ${i} tentativas.`
+              );
+            } else {
+              alert(
+                `O numero sorteado é menor que ${num}, voce tem mais ${i} tentativas.`
+              );
+            }
+            num = parseFloat(prompt("Digite novamente o número: "));
+
+          } else {
+            alert(`Voce perdeu! O numero correto era ${numeroAleatorio}.`);
+          }
+        }
+      } while (i > 0);
+    </script>
+  </body>
+</html>

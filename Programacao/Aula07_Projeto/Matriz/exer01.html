@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 1</title>
+  </head>
+  <body>
+    <!-- 
+        Voce é professor(a) e possui uma tabela com as notas de cada aluno em diferentes provas. Cda linha representa um aluno e cada coluna é uma prova. Seu objetivo é calcula a média de notas de cada aluno pra ver quem está acima da média.
+    -->
+    <script>
+      let matriz = [
+        ["Joao", 7.5, 4.0],
+        ["Laura", 8.0, 7.5],
+        ["Danilo", 4.0, 5.5],
+      ];
+
+      let resultado = [];
+
+      // Iterando sobre cada aluno na matriz
+      for (let i = 0; i < matriz.length; i++) {
+        let nome = matriz[i][0]; // Nome do aluno
+        let nota1 = matriz[i][1]; // Primeira nota
+        let nota2 = matriz[i][2]; // Segunda nota
+
+        // Calculando a media
+        let mediaAluno = (nota1 + nota2) / 2;
+
+        // Verificando se o aluno foi aprovado ou reprovado (if ternario)
+        // Considerando que a media é 7
+        let status = mediaAluno >= 7 ? "Aprovado" : "Reprovado";
+
+        // Adicionando a media e o status ao array de resultados
+        resultado.push(
+          `${nome}: Média = ${mediaAluno.toFixed(1)} - Status: ${status}`
+        );
+      }
+
+      // Exibindo os resultados no alert
+      alert(resultado.join("\n"));
+    </script>
+  </body>
+</html>

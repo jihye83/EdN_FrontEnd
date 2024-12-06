@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 11-Formulario</title>
+    <link rel="stylesheet" href="atividade.css" />
+  </head>
+  <body>
+    <main class="form-container">
+      <h2>Formúlario de reseva de passagem</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Nome Completo: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Digite seu nome..."
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="exemplo@exemplo.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="tel">Telefone: </label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            inputmode="numeric"
+            pattern="(\d{3}\. \d{3}\. \d{3}-\d{2})|(\d{11})"
+            placeholder="(xx) xxxxx-xxxx"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="inicial-date">Data de Partida </label>
+          <input type="date" id="inicial-date" name="inicial-date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="final-date">Data de Retorno </label>
+          <input type="date" id="final-date" name="final-date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="destiny">Destino: </label>
+          <select name="destiny" id="destiny" required>
+            <option value="">Selecione o seu destino</option>
+            <option value="brasil">Brasil</option>
+            <option value="eua">Estados Unidos</option>
+            <option value="canada">Canadá</option>
+            <option value="portugal">Portugal</option>
+            <option value="South of korea">Coréia do Sul</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="passenger-number">Número de Passageiro</label>
+          <input
+            type="number"
+            name="passenger-number"
+            id="passenger-number"
+            min="1"
+            max="100"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Classe: </label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="classe" value="economic" required />
+              Economica</label
+            >
+            <label>
+              <input type="radio" name="classe" value="business" required />
+              Executiva</label
+            >
+            <label>
+              <input type="radio" name="classe" value="first" required />
+              Primeira Classe</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="about">Observações adicionais: </label>
+          <textarea
+            name="observations"
+            id="observations"
+            rows="4"
+            placeholder="Coméntarios ou pedidos especiais..."
+          ></textarea>
+        </div>
+
+        <input type="submit" value="Reservar" class="submit-btn" />
+      </form>
+    </main>
+  </body>
+</html>

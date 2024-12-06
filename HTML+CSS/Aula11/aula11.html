@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 11-Formulario</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="form-container">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Nome Completo: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Digite seu nome..."
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            required
+            placeholder="exemplo@exemplo.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Digite a sua senha"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Genero: </label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="gerder" value="masculino" required />
+              Masculino</label
+            >
+            <label>
+              <input type="radio" name="gerder" value="feminino" required />
+              Feminino</label
+            >
+            <label>
+              <input type="radio" name="gerder" value="outros" required />
+              Outros</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Interesses: </label>
+          <div class="checkbox-group">
+            <label
+              ><input
+                type="checkbox"
+                name="interesses"
+                value="tecnologia"
+              />Tecnologia</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="interesses"
+                value="musica"
+              />Música</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="interesses"
+                value="esporte"
+              />Esporte</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="about">Sobre Voce: </label>
+          <textarea
+            name="about"
+            id="about"
+            rows="4"
+            placeholder="Conte um pouco sobre voce..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="country">País: </label>
+          <select name="country" id="country" required>
+            <option value="">Selecione seu País</option>
+            <option value="brasil">Brasil</option>
+            <option value="eua">Estados Unidos</option>
+            <option value="canada">Canadá</option>
+            <option value="portugal">Portugal</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Enviar" class="submit-btn" />
+      </form>
+    </main>
+  </body>
+</html>

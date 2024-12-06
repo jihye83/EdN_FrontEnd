@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Doto:wght@100..900&family=Itim&family=Noto+Sans+Elbasan&display=swap');
+
+body {
+    background-color: #EAF7CF;
+}
+
+header {
+    border: 2px solid #92828D;
+}
+
+nav {
+    border: 1px solid #00072D;
+}
+
+h1 {
+    color: #0E6BA8;
+    font-family: "Arial";
+    border: 2px solid black;
+    text-align: center;
+}
+
+p {
+    font-family: "Itim";
+}
+
+h2 {
+    font-family: "anton SC";
+}

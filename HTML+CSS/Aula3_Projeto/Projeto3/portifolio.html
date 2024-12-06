@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+
+    <style>
+      /* CSS direto no arquivo */
+      .menu-horizontal {
+        list-style: none; /* Remove os marcadores de lista */
+        padding: 0;
+        margin: 10;
+        display: flex; /* Coloca os itens em linha */
+        gap: 20px; /* Espaçamento entre os itens */
+      }
+
+      .menu-horizontal li {
+        display: inline; /* Alternativa ao flex, se preferir */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <ul class="menu-horizontal">
+          <li><a href="#sobre-mim">Sobre mim</a></li>
+          <li><a href="#habilidades">habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#download-cv">Download CV</a></li>
+          <li><a href="#entrar-em-contato">Meu Contato</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <h1>Olá, eu sou Ji Hye Koo!</h1>
+        <h3>Desenvolvedora Front-End</h3>
+        <img src="profile.jpg" alt="minhafoto" width="400px" />
+      </article>
+      <hr />
+      <article>
+        <section id="sobre-mim">
+          <h2>Sobre mim</h2>
+          <p>
+            Desenvolvedor Front-end com experiência em React.js, Next.js, Redux,
+            JavaScript, TypeScript, Styled Components, Material UI e consumo de
+            APIs REST. Apaixonado pelo desenvolvimento de componentes
+            reutilizáveis. Também possui experiência em projetos gerenciados por
+            Metodologias Ágeis. Formado em Análise Desenvolvimento de Sistemas e
+            cursando Especialização em Front-End na Escola da Nuvem.
+          </p>
+        </section>
+      </article>
+      <hr />
+      <article>
+        <section id="habilidades">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>React.js</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+            <li>Figma</li>
+            <li>AdobeXD</li>
+          </ul>
+        </section>
+      </article>
+      <hr />
+      <article>
+        <section id="projetos">
+          <h2>Projetos</h2>
+          <iframe src="" frameborder="1"></iframe>
+          <iframe src="" frameborder="1"></iframe>
+          <iframe src="" frameborder="1"></iframe>
+        </section>
+      </article>
+      <hr />
+      <article>
+        <section id="entrar-em-contato">
+          <h2>Onde me encontrar:</h2>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/jihye-koo/">Linkedin</a></li>
+            <li><a href="https://github.com/jihye83">Github</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <hr>
+    <footer>
+        <ul class="menu-horizontal">
+            <li>&COPY: CopyWrite - Ji Hye Koo</li>
+            <li>06/11/2024</li>
+          </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Advinhacao</title>
+    <link rel="stylesheet" href="./style2.css">
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Jogo de Advinhação</h1>
+      <p>Tente advinhar o número entre 1 a 100</p>
+      <form id="guess-form" action="">
+        <input
+          type="number"
+          id="guess-input"
+          placeholder="Digite um numero"
+          min="1"
+          max="100"
+          required
+        />
+        <button type="submit">Chutar</button>
+      </form>
+      <p id="message"></p>
+      <p id="lifes">Vidas restantes: <span id="lifes-count">7</span></p>
+    </div>
+
+    <script src="main2.js"></script>
+  </body>
+</html>

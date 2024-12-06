@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 1</title>
+  </head>
+  <body>
+    <script>
+      let numero = parseInt(
+        prompt(
+          "Digite o numero da fruta (1 a 8):\n 1. Banana\n 2. Manga\n 3. Maçã\n 4. Kiwi\n 5. Uva\n 6. Abacate\n 7. Morango\n 8. Ameixa"
+        )
+      );
+
+      switch (numero) {
+        case 1:
+          alert("Voce escolheu Banana. Preço: R$ 3,00");
+          break;
+        case 2:
+          alert("Voce escolheu Manga. Preço: R$ 5,00");
+          break;
+        case 3:
+          alert("Voce escolheu Maçã. Preço: R$ 4,00");
+          break;
+        case 4:
+          alert("Voce escolheu Kiwi. Preço: R$ 6,50");
+          break;
+        case 5:
+          alert("Voce escolheu Uva. Preço: R$ 7,00");
+          break;
+        case 6:
+          alert("Voce escolheu Abacate. Preço: R$ 4,50");
+          break;
+        case 7:
+          alert("Voce escolheu Morango. Preço: R$ 8,00");
+          break;
+        case 8:
+          alert("Voce escolheu Ameixa. Preço: R$ 9,00");
+          break;
+        default:
+          alert("Numero invalido. Escolha um numero entre 1 e 8.");
+      }
+    </script>
+  </body>
+</html>
